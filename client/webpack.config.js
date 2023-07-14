@@ -31,11 +31,12 @@ module.exports = () => {
       new WebpackPwaManifest({
         name: 'Text Editor',
         description: 'Store ideas or lines of code so that you can refer back to them.',
-        background_color: '#',
-        theme_color: '#',
+        background_color: '#000000',
+        theme_color: '#1D5D9B',
         start_url: './',
         publicPath: './',
-
+        fingerprints: false,
+        inject: true,
         icons: [
           {
           src: path.resolve('src/images/logo.png'),
